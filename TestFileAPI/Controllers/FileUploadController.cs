@@ -37,14 +37,24 @@ namespace FileUploadAPI.Controllers
         [HttpGet("list")]
         public IActionResult ListFiles()
         {
-            var dateFolder = DateTime.Now.ToString("yyyy-MM-dd");
-            var todayPath = Path.Combine(_baseUploadPath, dateFolder);
+            //var dateFolder = DateTime.Now.ToString("yyyy-MM-dd");
+            //var todayPath = Path.Combine(_baseUploadPath, dateFolder);
 
-            if (!Directory.Exists(todayPath))
+            //if (!Directory.Exists(todayPath))
+            //    return Ok(new List<string>());
+
+            //var files = Directory.GetFiles(todayPath)
+            //    .Select(path => Path.Combine(dateFolder, Path.GetFileName(path)).Replace("\\", "/"))
+            //    .ToList();
+
+            //return Ok(files);
+
+
+            if (!Directory.Exists(_baseUploadPath))
                 return Ok(new List<string>());
 
-            var files = Directory.GetFiles(todayPath)
-                .Select(path => Path.Combine(dateFolder, Path.GetFileName(path)).Replace("\\", "/"))
+            var files = Directory.GetFiles(_baseUploadPath, "*", SearchOption.AllDirectories)
+                .Select(path => Path.GetRelativePath(_baseUploadPath, path).Replace("\\", "/"))
                 .ToList();
 
             return Ok(files);
