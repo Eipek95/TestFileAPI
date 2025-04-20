@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFileAPI", "TestFileAPI\TestFileAPI.csproj", "{2EDD26F5-EE3D-4AFC-853E-4B0F16C16597}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFileWebUI", "TestFileWebUI\TestFileWebUI.csproj", "{CDF60C3C-F4A3-4FD5-BEA9-4AD632CEFFCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EDD26F5-EE3D-4AFC-853E-4B0F16C16597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EDD26F5-EE3D-4AFC-853E-4B0F16C16597}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EDD26F5-EE3D-4AFC-853E-4B0F16C16597}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EDD26F5-EE3D-4AFC-853E-4B0F16C16597}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDF60C3C-F4A3-4FD5-BEA9-4AD632CEFFCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDF60C3C-F4A3-4FD5-BEA9-4AD632CEFFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDF60C3C-F4A3-4FD5-BEA9-4AD632CEFFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDF60C3C-F4A3-4FD5-BEA9-4AD632CEFFCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C64CBE3-2AE2-44D7-85D2-0C649498DD66}
+	EndGlobalSection
+EndGlobal

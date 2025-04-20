@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+	<h2 class="mb-4">İş Emri Oluştur</h2>
+	<form id="isEmriForm" method="post" enctype="multipart/form-data">
+		<div class="row">
+			<div class="mb-3 col-md-6">
+				<label class="form-label">Dosya</label>
+				<input type="file" class="form-control" id="dosya" name="Dosya"  required>
+			</div>
+		</div>
+		<button type="submit" class="btn btn-primary">Kaydet</button>
+	</form>
+</div>
+
+
